@@ -16,11 +16,13 @@ def main():
     x = dataset.iloc[:, :-1].values #iloc it's for search some data .value give us the value
     y = dataset.iloc[:, 1].values
 
+    print("data on x: \n", x)
+
     #Starting the use of train_test_split
     X_train, X_test, y_train, y_test = train_test_split(x,y, test_size = 0.2, random_state = 0)
 
     #data we are using to train our model
-    print("Training data for x: \n",X_train)
+    print("\n Training data for x: \n",X_train)
 
 if __name__ == '__main__':
     main()
